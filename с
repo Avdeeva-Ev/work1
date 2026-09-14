@@ -1,0 +1,46 @@
+#include <stdio.h>
+#include <math.h>
+
+/**
+* @brief Вычисляет значение функции A по заданной формуле
+* @param x значение параметра x
+* @param y значение параметра y
+*/
+double A(const double x, const double y);
+
+/**
+* @brief Вычисляет значение функции B по заданной формуле
+* @param z значение параметра z
+*/
+double B(const double z);
+/** 
+* @brief точка входа в программу
+* @return возвращает 0, если программа выполнена корректно
+*/
+int main()
+{
+ const double x = 1.426;
+ const double y = -1.22;
+ const double z = 3.5;
+
+ printf("Исходные данные:\n");
+ printf("x = %.3f\n", x);
+ printf("y = %.3f\n", y);
+ printf("z = %.3f\n\n", z); 
+
+ 
+ printf(" a = %.3f\n ", A(x, y));
+ printf(" b = %.3f ", B(z));
+
+ return 0; 
+}
+
+double A(const double x, const double y)
+{
+ return (2 * cos(x - M_PI / 6.0)) / (0.5 + pow(sin(y), 2));
+}
+
+double B(const double z)
+{
+ return 1 + (pow(z, 2)) / (3 + (pow(z, 2) / 5.0));
+}
