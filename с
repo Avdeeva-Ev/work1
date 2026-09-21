@@ -40,7 +40,7 @@ int main()
 
 double A(const double x, const double y)
 {
- return (2 * cos(cos(x - M_PI / 6))) / (0.5 + pow(sin(y), 2));
+ return (2 * cos(x - M_PI / 6)) / (0.5 + pow(sin(y), 2));
 }
 
 double B(const double z)
