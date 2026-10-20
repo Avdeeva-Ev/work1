@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdbool.h>
  
 /**
  * @brief Считывает с клавиатуры натуральное число
@@ -13,7 +14,7 @@ int Nat();
  * @param b второе натуральное число
  * @return 1, если среднее арифметическое целое, иначе 0
  */
-int Ar(const int a, const int b);
+bool Ar(const int a, const int b);
  
 /**
  * @brief точка входа в программу
@@ -47,7 +48,7 @@ int Nat()
     return value;
 }
  
-int Ar(const int a, const int b)
+bool Ar(const int a, const int b)
 {
     return (a + b) % 2 == 0;
 }
