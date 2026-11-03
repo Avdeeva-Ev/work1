@@ -54,13 +54,13 @@ double getCoef(const int i);
 */
 int main() 
 {
-int n = getInt("Введите n: ");
-double e = getValue("Введите e: ");
-checkPositive(n);
-checkEpsilon(e);
-printf("Summ of %d elements is: %lf\n",n,sumN(n));
-printf("Summ of elements less %lf is: %lf\n",e,sumE(e));
-return 0;
+    int n = getInt("Введите n: ");
+    double e = getValue("Введите e: ");
+    checkPositive(n);
+    checkEpsilon(e);
+    printf("Summ of %d elements is: %lf\n",n,sumN(n));
+    printf("Summ of elements less %lf is: %lf\n",e,sumE(e));
+    return 0;
 }
  
 double getValue()
