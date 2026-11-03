@@ -88,7 +88,7 @@ void checkPositive(const int n)
 {
     if (n <= 0)
     {
-        printf("Ошибка, n должно быть позитивным\n");
+        printf("Ошибка, n должно быть положительным\n");
         exit(1);
     }
 }
@@ -97,7 +97,7 @@ void checkEpsilon(const double e)
 {
      if (e <= 0)
     {
-        printf("Ошибка, e должно быть позитивным\n");
+        printf("Ошибка, e должно быть положительным\n");
         exit(1);
     }
 }
